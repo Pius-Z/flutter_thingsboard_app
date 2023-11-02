@@ -38,6 +38,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "allDevices": MessageLookupByLibrary.simpleMessage("所有设备"),
         "appTitle": MessageLookupByLibrary.simpleMessage("Thingsboard"),
         "assetName": MessageLookupByLibrary.simpleMessage("资产名"),
+        "assets": MessageLookupByLibrary.simpleMessage("资产"),
         "assignedToCustomer": MessageLookupByLibrary.simpleMessage("分配给客户"),
         "auditLogDetails": MessageLookupByLibrary.simpleMessage("审计日志详情"),
         "auditLogs": MessageLookupByLibrary.simpleMessage("审计报告"),
@@ -94,7 +95,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "phone": MessageLookupByLibrary.simpleMessage("电话"),
         "postalCode": MessageLookupByLibrary.simpleMessage("邮编"),
         "profileSuccessNotification":
-            MessageLookupByLibrary.simpleMessage("配置更新成功"),
+            MessageLookupByLibrary.simpleMessage("资料更新成功"),
         "requestPasswordReset": MessageLookupByLibrary.simpleMessage("要求重置密码"),
         "stateOrProvince": MessageLookupByLibrary.simpleMessage("州 / 省"),
         "systemAdministrator": MessageLookupByLibrary.simpleMessage("系统管理员"),

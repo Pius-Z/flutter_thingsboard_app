@@ -3,10 +3,10 @@ import 'package:thingsboard_client/thingsboard_client.dart';
 
 mixin CustomersBase on EntitiesBase<Customer, PageLink> {
   @override
-  String get title => 'Customers';
+  String get title => '客户';
 
   @override
-  String get noItemsFoundText => 'No customers found';
+  String get noItemsFoundText => '未找到客户';
 
   @override
   Future<PageData<Customer>> fetchEntities(PageLink pageLink) {

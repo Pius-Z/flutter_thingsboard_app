@@ -46,10 +46,10 @@ const Map<ActionStatus, String> actionStatusTranslations = {
 
 mixin AuditLogsBase on EntitiesBase<AuditLog, TimePageLink> {
   @override
-  String get title => 'Audit Logs';
+  String get title => '审计日志';
 
   @override
-  String get noItemsFoundText => 'No audit logs found';
+  String get noItemsFoundText => '未找到审计日志';
 
   @override
   Future<PageData<AuditLog>> fetchEntities(TimePageLink pageLink) {

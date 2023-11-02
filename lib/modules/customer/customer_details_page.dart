@@ -7,7 +7,7 @@ class CustomerDetailsPage extends ContactBasedDetailsPage<Customer> {
       : super(tbContext,
             entityId: customerId,
             defaultTitle: 'Customer',
-            subTitle: 'Customer details');
+            subTitle: '客户详情');
 
   @override
   Future<Customer?> fetchEntity(String customerId) {

@@ -4,10 +4,10 @@ import 'package:thingsboard_client/thingsboard_client.dart';
 
 mixin AssetsBase on EntitiesBase<AssetInfo, PageLink> {
   @override
-  String get title => 'Assets';
+  String get title => '资产';
 
   @override
-  String get noItemsFoundText => 'No assets found';
+  String get noItemsFoundText => '未找到资产';
 
   @override
   Future<PageData<AssetInfo>> fetchEntities(PageLink pageLink) {

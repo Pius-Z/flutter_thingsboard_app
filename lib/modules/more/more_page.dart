@@ -62,7 +62,7 @@ class _MorePageState extends TbContextState<MorePage> {
                       height: 48,
                       child: Padding(
                           padding:
-                              EdgeInsets.symmetric(vertical: 0, horizontal: 18),
+                          EdgeInsets.symmetric(vertical: 0, horizontal: 18),
                           child: Row(mainAxisSize: MainAxisSize.max, children: [
                             Icon(Icons.logout, color: Color(0xFFE04B2F)),
                             SizedBox(width: 34),
@@ -85,7 +85,7 @@ class _MorePageState extends TbContextState<MorePage> {
 
   Widget buildMoreMenuItems(BuildContext context) {
     List<Widget> items =
-        MoreMenuItem.getItems(tbContext, context).map((menuItem) {
+    MoreMenuItem.getItems(tbContext, context).map((menuItem) {
       return GestureDetector(
           behavior: HitTestBehavior.opaque,
           child: Container(
@@ -175,10 +175,10 @@ class MoreMenuItem {
                 title: '${S.of(context).customers}',
                 icon: Icons.supervisor_account,
                 path: '/customers'),
-            MoreMenuItem(
-                title: '${S.of(context).assets}',
-                icon: Icons.domain,
-                path: '/assets'),
+            // MoreMenuItem(
+            //     title: '${S.of(context).assets}',
+            //     icon: Icons.domain,
+            //     path: '/assets'),
             MoreMenuItem(
                 title: '${S.of(context).auditLogs}',
                 icon: Icons.track_changes,
@@ -186,12 +186,12 @@ class MoreMenuItem {
           ]);
           break;
         case Authority.CUSTOMER_USER:
-          items.addAll([
-            MoreMenuItem(
-                title: '${S.of(context).assets}',
-                icon: Icons.domain,
-                path: '/assets')
-          ]);
+        // items.addAll([
+        //   MoreMenuItem(
+        //       title: '${S.of(context).assets}',
+        //       icon: Icons.domain,
+        //       path: '/assets')
+        // ]);
           break;
         case Authority.REFRESH_TOKEN:
           break;

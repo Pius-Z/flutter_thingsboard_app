@@ -7,7 +7,7 @@
   "more": "更多",
 
   "customers": "客户",
-  "asserts": "资产",
+  "assets": "资产",
   "auditLogs": "审计报告",
   "logout": "登出",
   "login": "登录",
@@ -80,7 +80,7 @@
   "firstNameUpper": "名",
   "lastName": "姓",
   "lastNameUpper": "姓",
-  "profileSuccessNotification": "配置更新成功",
+  "profileSuccessNotification": "资料更新成功",
   "passwordSuccessNotification": "密码修改成功",
 
   "notImplemented": "未实现!",

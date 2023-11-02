@@ -17,26 +17,26 @@ const Map<AlarmSeverity, Color> alarmSeverityColors = {
 };
 
 const Map<AlarmSeverity, String> alarmSeverityTranslations = {
-  AlarmSeverity.CRITICAL: 'Critical',
-  AlarmSeverity.MAJOR: 'Major',
-  AlarmSeverity.MINOR: 'Minor',
-  AlarmSeverity.WARNING: 'Warning',
-  AlarmSeverity.INDETERMINATE: 'Indeterminate',
+  AlarmSeverity.CRITICAL: '危险',
+  AlarmSeverity.MAJOR: '重要',
+  AlarmSeverity.MINOR: '次要',
+  AlarmSeverity.WARNING: '警告',
+  AlarmSeverity.INDETERMINATE: '不确定',
 };
 
 const Map<AlarmStatus, String> alarmStatusTranslations = {
-  AlarmStatus.ACTIVE_ACK: 'Active Acknowledged',
-  AlarmStatus.ACTIVE_UNACK: 'Active Unacknowledged',
-  AlarmStatus.CLEARED_ACK: 'Cleared Acknowledged',
-  AlarmStatus.CLEARED_UNACK: 'Cleared Unacknowledged',
+  AlarmStatus.ACTIVE_ACK: '激活 已确认',
+  AlarmStatus.ACTIVE_UNACK: '激活 未确认',
+  AlarmStatus.CLEARED_ACK: '清除 已确认',
+  AlarmStatus.CLEARED_UNACK: '清除 未确认',
 };
 
 mixin AlarmsBase on EntitiesBase<AlarmInfo, AlarmQuery> {
   @override
-  String get title => 'Alarms';
+  String get title => '告警';
 
   @override
-  String get noItemsFoundText => 'No alarms found';
+  String get noItemsFoundText => '没有警告';
 
   @override
   Future<PageData<AlarmInfo>> fetchEntities(AlarmQuery query) {
